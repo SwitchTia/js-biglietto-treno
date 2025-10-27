@@ -49,21 +49,35 @@ let userAge = 0;
 
 //First promt
 userKmStr = prompt("Insert the number of killometers you wanat to travel");
+//prompt controls
+if (userKmStr === null || userKmStr.trim() === "" || !/^\d+$"/.test(userKmStr)) {
+    alert("Please enter numbers only (no letters or symbols).");
+}
 userKm = parseInt(userKmStr);
 
-//controls
-if (userKm < 1 || userKm >= 3000) {
+//km range controls
+if (isNaN(userKm) || userKm < 1 || userKm >= 3000) {
     alert("Please enter a valid number between 1 and 3000.");
 }
 console.log(userKm);
 
+
+//Second prompt
 userAgeStr = prompt("Insert your age in numbers");
+//prompt controls
+if (userAgeStr === null || userAgeStr.trim() === "" || !/^\d+$/.test(userAgeStr)) {
+    alert("Please enter numbers only (no letters or symbols).");
+}
+
 userAge = parseInt(userAgeStr);
-//controls
-if (userAge <= 0 || userAge > 110) {
+
+//age range controls
+if (isNaN(userAge) || userAge <= 0 || userAge > 110) {
     alert("Please enter a valid age between 0 and 110.");
 }
 console.log(userAge);
+
+
 
 let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
 console.log(ticketRegPrice);
