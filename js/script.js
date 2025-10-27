@@ -47,6 +47,7 @@ let userKm = 0;
 let userAge = 0;
 
 
+
 userKmStr = prompt("Insert the number of killometers you wanat to travel");
 userKm = parseInt(userKmStr);
 console.log(userKm);
@@ -61,18 +62,20 @@ console.log(ticketRegPrice);
 let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 20)).toFixed(2);
 console.log(ticket20);
 
-ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 40)).toFixed(2);
+let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 40)).toFixed(2);
 console.log(ticket40);
+
+
 
 let result = 0;
 
-// if(userAge < 18){
-
-// }
-
-//if        userAge < 18
-//    {ticket20}
-//else if   userAge > 65
-//    {ticket%40}
-//else
-//    {ticketRegPrice}
+if (userAge < 18){
+    result = ticket20;
+}
+else if (userAge > 65){
+    result = ticket40;
+}
+else {
+    result = ticketRegPrice;
+}
+console.log(result);
