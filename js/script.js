@@ -50,7 +50,7 @@ let userAge = 0;
 //First promt
 userKmStr = prompt("Insert the number of killometers you wanat to travel");
 //prompt controls
-if (userKmStr === null || userKmStr.trim() === "" || !/^\d+$"/.test(userKmStr)) {
+if (userKmStr === null || userKmStr.trim() === "") {
     alert("Please enter numbers only (no letters or symbols).");
 }
 userKm = parseInt(userKmStr);
@@ -65,7 +65,7 @@ console.log(userKm);
 //Second prompt
 userAgeStr = prompt("Insert your age in numbers");
 //prompt controls
-if (userAgeStr === null || userAgeStr.trim() === "" || !/^\d+$/.test(userAgeStr)) {
+if (userAgeStr === null || userAgeStr.trim() === "") {
     alert("Please enter numbers only (no letters or symbols).");
 }
 
