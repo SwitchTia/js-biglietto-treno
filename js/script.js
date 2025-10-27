@@ -28,3 +28,18 @@
 
 //ticket20 = (ticketPrice / 100) * 20
 //ticket40 = (ticketPrice / 100) * 40
+
+//Logic execution:
+let userKmStr = "";
+let userAgeStr = "";
+let userKm = 0;
+let userAge = 0;
+
+
+userKmStr = prompt("Insert the number of killometers you wanat to travel");
+userKm = parseInt(userKmStr);
+//console.log(userKm);
+
+userAgeStr = prompt("Insert your age in numbers")
+userAge = parseInt(userAgeStr)
+//console.log(userAge);
