@@ -56,7 +56,7 @@ userAgeStr = prompt("Insert your age in numbers");
 userAge = parseInt(userAgeStr);
 console.log(userAge);
 
-let ticketRegPrice = parseFloat(userKm * 0.10).toFixed(2)
+let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
 console.log(ticketRegPrice);
 
 let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 20)).toFixed(2);
@@ -78,4 +78,4 @@ else if (userAge > 65){
 else {
     result = ticketRegPrice;
 }
-console.log(result);
+console.log(`The price of your ticket is ${result}`);
