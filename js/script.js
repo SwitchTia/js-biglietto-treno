@@ -26,8 +26,8 @@
 
 //ticketRegPrice == userKm * 0.21
 
-//ticket%20 = (ticketRegPrice / 100) * 20
-//ticket%40 = (ticketRegPrice / 100) * 40
+//ticket20 = (ticketRegPrice / 100) * 20
+//ticket40 = (ticketRegPrice / 100) * 40
 
 //LOGIC EXECUTION:
 
@@ -49,8 +49,30 @@ let userAge = 0;
 
 userKmStr = prompt("Insert the number of killometers you wanat to travel");
 userKm = parseInt(userKmStr);
-//console.log(userKm);
+console.log(userKm);
 
-userAgeStr = prompt("Insert your age in numbers")
-userAge = parseInt(userAgeStr)
-//console.log(userAge);
+userAgeStr = prompt("Insert your age in numbers");
+userAge = parseInt(userAgeStr);
+console.log(userAge);
+
+let ticketRegPrice = parseFloat(userKm * 0.10).toFixed(2)
+console.log(ticketRegPrice);
+
+let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 20)).toFixed(2);
+console.log(ticket20);
+
+ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 40)).toFixed(2);
+console.log(ticket40);
+
+let result = 0;
+
+// if(userAge < 18){
+
+// }
+
+//if        userAge < 18
+//    {ticket20}
+//else if   userAge > 65
+//    {ticket%40}
+//else
+//    {ticketRegPrice}
