@@ -78,18 +78,18 @@ if (isNaN(userAge) || userAge <= 0 || userAge > 110) {
 console.log(userAge);
 
 
-
+//Canculating the regular price of the ticket
 let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
 console.log(ticketRegPrice);
-
+//Canculating the 20% discounted price of the ticket
 let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 20)).toFixed(2);
 console.log(ticket20);
-
+//Canculating the 40% discounted price of the ticket
 let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 40)).toFixed(2);
 console.log(ticket40);
 
 
-
+//Main program
 let result = 0;
 
 if (userAge < 18){
@@ -102,5 +102,3 @@ else {
     result = ticketRegPrice;
 }
 console.log(`The price of your ticket is ${result}`);
-
-//faccio il bonus dopo palestra))
