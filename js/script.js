@@ -52,13 +52,17 @@ userKmStr = prompt("Insert the number of killometers you wanat to travel");
 userKm = parseInt(userKmStr);
 
 //controls
-if (userKm <= 1 || userKm >= 3000) {
+if (userKm < 1 || userKm >= 3000) {
     alert("Please enter a valid number between 1 and 3000.");
 }
 console.log(userKm);
 
 userAgeStr = prompt("Insert your age in numbers");
 userAge = parseInt(userAgeStr);
+//controls
+if (userAge <= 0 || userAge > 110) {
+    alert("Please enter a valid age between 0 and 110.");
+}
 console.log(userAge);
 
 let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
