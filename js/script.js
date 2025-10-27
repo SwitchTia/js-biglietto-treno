@@ -20,16 +20,27 @@
 
 
 
-// Datum:
+// DATUM:
 //userKm = user input prompt km (parseInt)
 //userAge = user input prompt age (parseInt)
 
-//ticketPrice == userKm * 0.21
+//ticketRegPrice == userKm * 0.21
 
-//ticket20 = (ticketPrice / 100) * 20
-//ticket40 = (ticketPrice / 100) * 40
+//ticket%20 = (ticketRegPrice / 100) * 20
+//ticket%40 = (ticketRegPrice / 100) * 40
 
-//Logic execution:
+//LOGIC EXECUTION:
+
+//if        userAge < 18
+//    {ticket20}
+//else if   userAge > 65
+//    {ticket%40}
+//else
+//    {ticketRegPrice}
+
+
+//***RUN PROGRAM***//
+
 let userKmStr = "";
 let userAgeStr = "";
 let userKm = 0;
