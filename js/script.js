@@ -8,11 +8,23 @@
 // L'output del prezzo finale va stampato in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). 
 // Questo richiederà un minimo di ricerca.
 
-// Prima di scrivere il codice impostate il ragionamento nei commenti!
-
 // Bonus:
 // Applicare dei controlli sull'input dell'utente
 
 
 // Per ottenere numeri da 1 a 10
 //const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+
+
+
+
+
+// Datum:
+//userKm = user input prompt km (parseInt)
+//userAge = user input prompt age (parseInt)
+
+//ticketPrice == userKm * 0.21
+
+//ticket20 = (ticketPrice / 100) * 20
+//ticket40 = (ticketPrice / 100) * 40
