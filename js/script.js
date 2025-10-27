@@ -47,9 +47,14 @@ let userKm = 0;
 let userAge = 0;
 
 
-
+//First promt
 userKmStr = prompt("Insert the number of killometers you wanat to travel");
 userKm = parseInt(userKmStr);
+
+//controls
+if (userKm <= 1 || userKm >= 3000) {
+    alert("Please enter a valid number between 1 and 3000.");
+}
 console.log(userKm);
 
 userAgeStr = prompt("Insert your age in numbers");
@@ -79,3 +84,5 @@ else {
     result = ticketRegPrice;
 }
 console.log(`The price of your ticket is ${result}`);
+
+//faccio il bonus dopo palestra))
