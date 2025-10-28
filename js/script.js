@@ -26,8 +26,8 @@
 
 //ticketRegPrice == userKm * 0.21
 
-//ticket20 = (ticketRegPrice / 100) * 20
-//ticket40 = (ticketRegPrice / 100) * 40
+//ticket20 = (ticketRegPrice * 20) / 100
+//ticket40 = (ticketRegPrice * 40) / 100
 
 //LOGIC EXECUTION:
 
@@ -82,10 +82,10 @@ console.log(userAge);
 let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
 console.log(ticketRegPrice);
 //Canculating the 20% discounted price of the ticket
-let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 20)).toFixed(2);
+let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice * 20) / 100)).toFixed(2);
 console.log(ticket20);
 //Canculating the 40% discounted price of the ticket
-let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice / 100) * 40)).toFixed(2);
+let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice * 40) / 100)).toFixed(2);
 console.log(ticket40);
 
 
