@@ -79,13 +79,13 @@ console.log(userAge);
 
 
 //Canculating the regular price of the ticket
-let ticketRegPrice = parseFloat(userKm * 0.21).toFixed(2)
+let ticketRegPrice = parseFloat(userKm * 0.21);
 console.log(ticketRegPrice);
 //Canculating the 20% discounted price of the ticket
-let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice * 20) / 100)).toFixed(2);
+let ticket20 = parseFloat(ticketRegPrice - ((ticketRegPrice * 20) / 100));
 console.log(ticket20);
 //Canculating the 40% discounted price of the ticket
-let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice * 40) / 100)).toFixed(2);
+let ticket40 = parseFloat(ticketRegPrice - ((ticketRegPrice * 40) / 100));
 console.log(ticket40);
 
 
@@ -101,4 +101,4 @@ else if (userAge > 65){
 else {
     result = ticketRegPrice;
 }
-console.log(`The price of your ticket is ${result}`);
+console.log(`The price of your ticket is ${result.toFixed(2)}`);
